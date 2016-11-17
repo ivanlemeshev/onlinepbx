@@ -1,5 +1,10 @@
 # onlinePBX HTTP API client
 
+Requirements:
+
+* PHP >= 5.6
+* PHP Curl extension
+
 Example:
 
 ```php
