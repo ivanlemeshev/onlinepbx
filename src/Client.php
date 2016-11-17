@@ -167,11 +167,11 @@ class Client
         $date = date('r');
         $hashedContent = hash('md5', $post);
 
-        $encodeString = $method . "\n"
-                      . $hashedContent . "\n"
-                      . self::HEADER_CONTENT_TYPE . "\n"
-                      . $date . "\n"
-                      . $url . "\n";
+        $encodeString = $method . PHP_EOL
+                      . $hashedContent . PHP_EOL
+                      . self::HEADER_CONTENT_TYPE . PHP_EOL
+                      . $date . PHP_EOL
+                      . $url . PHP_EOL;
 
         $signature = base64_encode(hash_hmac('sha1', $encodeString, $this->authKey, false));
 
