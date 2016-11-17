@@ -1,6 +1,6 @@
 <?php
 
-use IvanLemesehev\OnPBX\Client;
+use IvanLemeshev\OnPBX\Client;
 use PHPUnit\Framework\TestCase;
 
 class ClientTest extends TestCase

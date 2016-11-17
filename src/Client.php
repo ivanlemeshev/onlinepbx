@@ -1,6 +1,6 @@
 <?php
 
-namespace IvanLemesehev\OnPBX;
+namespace IvanLemeshev\OnPBX;
 
 class Client
 {
