@@ -54,11 +54,11 @@ class ClientTest extends TestCase
         $date = date('r');
         $hashedContent = hash('md5', '123');
 
-        $encodeString = 'POST' . "\n"
-            . $hashedContent . "\n"
-            . 'application/x-www-form-urlencoded' . "\n"
-            . $date . "\n"
-            . $url . "\n";
+        $encodeString = 'POST' . PHP_EOL
+            . $hashedContent . PHP_EOL
+            . 'application/x-www-form-urlencoded' . PHP_EOL
+            . $date . PHP_EOL
+            . $url . PHP_EOL;
 
         $signature = base64_encode(hash_hmac('sha1', $encodeString, null, false));
 
